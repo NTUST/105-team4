@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>MEME</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- styles -->
+		<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+		<!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/swfobject.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.tubular.js"></script>
+		
+		<!--Bootstrap -->
+		<!-- 最新編譯和最佳化的 CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<!-- 選擇性佈景主題 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<!-- 最新編譯和最佳化的 JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="assets/css/slippry.css">
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/color/default.css">
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="assets/js/modernizr.custom.js"></script>
+		<script>
+		window.fbAsyncInit = function() {
+		FB.init({
+		appId      : '1621629798161129',
+		xfbml      : true,
+		version    : 'v2.6'
+		});
+		};
+		(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script type="text/javascript">
+		$(function(){
+		// 載入 Youtube 影片當背景圖片
+		$('body').tubular('2dwjlBRu24k', 'wrapper');
+		// 播放/暫停
+		$('#videoPause').click(function() {
+		if ($(this).hasClass('videoPaused')) {
+			ytplayer.playVideo();
+			$(this).removeClass('videoPaused');
+		} else {
+			ytplayer.pauseVideo();
+			$(this).addClass('videoPaused');
+		}
+		return false;
+		});
+		
+		// 靜音/取消靜音
+		$('#videoMute').click(function() {
+		if ($(this).hasClass('videoMute')) {
+			ytplayer.mute();
+			$(this).removeClass('videoMute');
+		} else {
+			ytplayer.unMute();
+			$(this).addClass('videoMute');
+		}
+		return false;
+		});
+		
+		// 停止播放影片及載入
+		$('#videoStop').click(function() {
+		ytplayer.stopVideo();
+		ytplayer.clearVideo();
+		$('#yt-container').hide();
+		return false;
+		});
+		$("#peidui").hide();
+		$("#btn2").click(function(){
+		$("#peidui").show();
+		});
+		});
+		</script>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			@font-face {
+				font-family: Hanzipen;
+				src: url(assets/fonts/myFont.ttf);
+			}
+			a {
+				color: #fff;
+				font-size: 60px;
+				text-decoration: underline;
+			}
+			div#video-cover {
+				background: url(assets/img/black-65-trans.png);
+			}
+			#video-controls {
+				position: absolute;
+				left: 200px;
+				top: 200px;
+				width: 500px;
+				color: #fff;
+				font-size: 24px;
+				padding: 5px;
+				background: url(black-65-trans.png);
+			}
+			#video-controls a {
+				color: #fff;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/">MEME</a>
+					</div>
+					<div class="navigation">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><nav>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="current"><a href="#intro">Home</a></li>
+								<li><a href="#about">START!</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul></nav>
+						</div><
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="intro" class="section" >
+			<div id="wrapper" class="navbar-header">
+				<section id="about" class="black-85">
+					<div class="container" >
+						</br>
+						</br>
+						
+						</br>
+						
+						</br>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								</br>
+								</br>
+								<p style="color:#fff;font-size:40px; font-family: Hanzipen;" >
+									
+									MeMe跟妳講啦～
+									
+								</p>
+								</br>
+								</br>
+								<button class="btn btn-danger dropdown-toggle" style="width:20%;height:50px;font-size:20px" onclick="window.location.href='/'">RESTART!</button>
+							</div>
+						</div>
+					</div>
+					<dic class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<p style="font-family: Hanzipen;color:#fff;font-size:20px;"><%= resolve %></p>
+						<br/>
+						<p style="font-family: Hanzipen;color:#fff;font-size:20px;"><%= notice %></p>
+						<br>
+						<br>
+						<p style="color:#fff;font-size:40px; font-family: Hanzipen;" >想跟我們的MeMe聊天嗎？</p>
+					</div>
+					</dic>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="aligncenter">
+								<div class="fb-messengermessageus"
+									messenger_app_id="1621629798161129"
+									page_id="396609957199539"
+									color="blue"
+								size="xlarge" ></div>
+								<!--
+								All links in the footer should remain intact.
+								Licenseing information is available at: http://bootstraptaste.com/license/
+								You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Groovin
+								-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+		<!-- javascript -->
+		<!--<script src="assets/js/jquery-1.9.1.min.js"></script>-->
+		<script src="assets/js/jquery.easing.js"></script>
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/slippry.min.js"></script>
+		<script src="assets/js/nagging-menu.js"></script>
+		<script src="assets/js/jquery.nav.js"></script>
+		<script src="assets/js/jquery.scrollTo.js"></script>
+		<script src="assets/js/jquery.fancybox.pack.js"></script>
+		<script src="assets/js/jquery.fancybox-media.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/imagesloaded.js"></script>
+		<script src="assets/js/jquery.nicescroll.min.js"></script>
+		<script src="assets/js/validate.js"></script>
+		<script src="assets/js/AnimOnScroll.js"></script>
+		<script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+		minDuration : 0.4,
+		maxDuration : 0.7,
+		viewportFactor : 0.2
+		} );
+		</script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>
